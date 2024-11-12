@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>المصحف المفسر - عبدالرحمن أشرف</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>المصحف المفسر</h1>
+        <h2>باسم عبدالرحمن أشرف</h2>
+    </header>
+
+    <!-- زر لفتح فهرس الأجزاء -->
+    <nav>
+        <button id="part-list-button">عرض فهرس الأجزاء</button>
+    </nav>
+
+    <!-- قائمة فهرس الأجزاء -->
+    <div id="part-list" class="hidden">
+        <!-- سيتم إضافة الأجزاء هنا بواسطة JavaScript -->
+    </div>
+
+    <!-- نافذة اختيار القارئ وتشغيل التلاوة -->
+    <div id="reciter-list" class="hidden">
+        <label>اختر الشيخ:</label>
+        <select id="reciter-select">
+            <option value="Alafasy">مشاري العفاسي</option>
+            <option value="Shuraym">سعود الشريم</option>
+            <option value="Basfar">عبدالباسط عبدالصمد</option>
+            <option value="Hudhaify">علي الحذيفي</option>
+            <option value="Minshawi">محمد المنشاوي</option>
+            <option value="Husary">محمود الحصري</option>
+            <option value="Ayyub">محمد أيوب</option>
+            <option value="Ghamidi">سعد الغامدي</option>
+            <option value="Muhayni">ياسر الدوسري</option>
+            <option value="Hani">هاني الرفاعي</option>
+        </select>
+        <button onclick="playAyah()">تشغيل التلاوة</button>
+        <button onclick="stopAyah()">توقف</button>
+    </div>
+
+    <main id="quran-container">
+        <section id="sura-content">
+            <h2 id="sura-name">اسم السورة</h2>
+            <div id="aya-container">
+                <!-- سيتم إدراج الآيات هنا -->
+            </div>
+        </section>
+
+        <aside id="interpretation">
+            <h3>معاني الآيات</h3>
+            <p id="interpretation-content">اضغط على الآية لعرض المعنى، أو اضغط ضغطاً مطولاً لاختيار الشيخ والتلاوة.</p>
+        </aside>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

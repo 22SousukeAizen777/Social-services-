@@ -1,0 +1,85 @@
+/* CSS للتنسيق الأساسي والزخرفة المغربية */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Amiri', serif;
+    direction: rtl;
+    background-color: #f9f5f0;
+    color: #333;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(135deg, #cbb3a8, #a88f78);
+}
+
+header h1, header h2 {
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+nav {
+    background-color: #784a3d;
+    padding: 10px;
+    text-align: center;
+}
+
+button {
+    background-color: #a66e5d;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+#part-list {
+    display: none;
+    text-align: center;
+    background-color: #f9f5f0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+#quran-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+#sura-content {
+    width: 70%;
+}
+
+#aya-container {
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+#interpretation {
+    width: 25%;
+    padding: 10px;
+    background-color: #eae0d5;
+    border-radius: 10px;
+    border: 1px solid #c0a580;
+}
+
+#interpretation h3 {
+    margin-bottom: 10px;
+}
